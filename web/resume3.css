@@ -1,0 +1,80 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 17-Nov-2023, 11:03:20 pm
+    Author     : HUDA
+*/
+*
+{
+    padding: 0px;
+    margin: 0px;
+}
+.outer
+{
+    width: 700px;
+    height: auto;
+    border: 1px solid black;
+    margin: 0px auto;
+}
+.outer h1
+{
+    text-align: center;
+}
+.p
+{
+    font-size: 9pt;
+}
+.border
+{
+    width: 98.5%;
+   
+    background-color: rgb(200, 200, 200);
+    border: 1px solid black;
+}
+ul
+{
+    font-size: 20px;
+    margin-left: 50px;
+}
+h2
+{
+    float: right;
+}
+.education
+{
+    font-size: 11pt;
+}
+
+.info
+{
+    margin-left: 30px;
+   
+}
+
+.parentcgpa{
+    position: relative;
+}
+.cgpaclass{
+    position: absolute; 
+top: 0; 
+right: 0; 
+}
+.national
+{
+    font-size: 11pt;
+}
+.header-contact
+{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+font-weight:bold;
+    font-size: 12pt;
+    position: relative;
+    animation: show 2s .8s;
+}
+

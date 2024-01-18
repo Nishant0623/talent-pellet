@@ -1,0 +1,142 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 30-Oct-2023, 6:32:58 pm
+    Author     : HUDA
+*/
+*
+{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+.bg
+{
+  
+  z-index:10;
+  width:100%;
+  background-image: linear-gradient( rgba(16, 30, 47, 0.65), rgba(16, 30, 47, 0.65)),url("pictures/work.jpg");
+  height:500px;
+  background-position: center;
+    background-size: cover;
+}
+.navbar-brand
+{
+  font-weight:bold;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color:white;
+
+}
+.nav-item
+{
+  font-weight:600;
+  padding-left: 50px;
+  text-transform: uppercase;
+  text-align: end;
+}
+.nav-link
+{
+  color:whitesmoke;
+  letter-spacing: 2px;
+  font-size: 1em;
+  font-weight: 700;
+}
+.nav-link:hover
+{
+  background:#262626;
+  color: white;
+  border-radius: 5px;
+  transition:all 0.6s ease 0s;
+}
+#i1
+{
+  padding-left:20%;
+}
+#p1
+{
+  margin-top:2em;
+  font-weight: bolder;
+  font-size: large;
+}
+#h1
+{
+  font-weight: bolder;
+  font-size: 50px;
+}
+.carou
+{
+    margin-top:2em;
+    background-color: black;
+    
+  
+    color:white;
+    text-align: center;
+}
+#r1{
+  margin-top:2em;
+}
+#r2{
+  margin-top: 2em;
+  
+}
+.content{
+  background-color:rgba(16, 30, 47, 0.65);
+  height:90%;
+  width:79%;
+  position:relative;
+left:40px;
+  top:-450px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  opacity:0;
+  transition:0.6s;
+}
+.content:hover{
+  opacity:1;
+
+  
+}
+.content > *{
+transform: translateY(25px);
+transition:0.6s;
+}
+#s1{
+  width:60%;
+  height:50px;
+  color:black;
+  background-color: yellow;
+  font-weight: bold;
+
+}
+#c2:hover{
+  transform:translate(0px,-10px);
+}
+#b2
+{
+  height:600px;
+  width:350px;
+  position:absolute;
+  top:700px;
+  left:550px;
+  visibility: hidden;
+ 
+ 
+}
+#img1
+{
+  height:600px;
+  width:350px;
+}
+#c2
+{
+  margin-left: 140px;
+}
+
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="signIn.css"><!-- comment -->
+            <script><!-- comment -->
+                    function valiDateEmail()
+            {
+                
+                 let reg=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        let x=document.getElementById("email").value;
+        let y=document.getElementById("p4");
+        if(x==="")
+        {
+          
+         
+          y.innerHTML="It is a required field";
+        }
+        else{
+          if(!reg.test(x))
+          {
+       
+          y.innerHTML="Enter valid email format";
+          }
+          else{
+
+          y.innerHTML="";
+          }
+      }
+      
+            }
+            function passWord(){
+            let x=document.getElementById("password").value;
+            if(x==="")
+            {
+                document.getElementById("p5").innerHTML="It is a required field";
+            }
+            }
+            function onClick()
+            {
+              valiDateEmail();
+              passWord();
+              
+            }
+            </script><!-- comment -->
+    </head>
+    <body>
+        <div class="bg">
+<div class="form">
+    <h1 id="h">Login</h1>
+    <form action="http://localhost:8088/WebApplication2/regestration" method="post">
+        <div class="input-group">
+            
+           
+               <div class="input-field mb-3">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="text" placeholder="Email" id="email" name="email">
+                <div id="p4" style="font-size: 10px"></div>
+            </div>
+            
+
+            <div class="input-field mb-3">
+                <i class="fa-solid fa-lock" id="i1"></i>
+                <input type="password" placeholder="password" id="password" name="password">
+                  <p id="p5" style="font-size: 10px"></p>
+            </div>
+           
+          
+             
+      
+       <p>Forgot Password<a href="email.html"> Click Here!</a></p>
+       <br>
+        <div class="btn-field">
+            <button type="submit" id="signIn" onclick="onClick()">Login</button>
+            <button type="button" id="signUp"><a href="login.html">Create Account</a></button>
+
+        </div>
+        </div>
+    </form>
+
+</div>
+    </div>
+    </body>
+</html>

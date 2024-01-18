@@ -1,0 +1,221 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 17-Nov-2023, 9:57:57 pm
+    Author     : HUDA
+*/
+:root
+{
+    --baseColor: #f5f5f5;
+    --backgroundColor: #fff;
+    --fontColor: #1f1f1f;
+    --lineColor: #818181;
+    --greyColor: #e5e5e5;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Nunito", sans-serif;
+}
+
+body
+{
+    background-color: var(--baseColor);
+    width: 100%;
+    height: auto;
+    color: var(--fontColor);
+}
+
+h3
+{
+    text-transform: uppercase;
+    line-height: 2;
+    letter-spacing: 2;
+    font-size: 11pt;
+    font-weight:bold;
+}
+
+h4
+{
+    font-size: 11pt;
+    font-weight:bold;
+}
+
+p
+{
+    font-size: 9pt;
+}
+.resume
+{
+    max-width: 800px;
+    margin: 2rem auto;
+    background: var(--backgroundColor);
+    padding: 2rem 1rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.header
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header-image
+{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+    animation: show 2s .5s;
+}
+.header-name
+{
+    letter-spacing: 2;
+    text-transform: uppercase;
+    
+    text-align: center;
+    animation: show 2s .6s;
+}
+.header-job
+{
+    letter-spacing: 1;
+    
+    position: relative;
+    animation: show 2s .6s;
+}
+.header-contact
+{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+
+    font-size: 14px;
+    position: relative;
+    animation: show 2s .8s;
+}
+.divider
+{
+    width: 90%;
+    border: 1px solid var(--lineColor);
+}
+.body-resume
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.left-resume
+{
+  
+    text-align: right;
+    border-right: 2px solid var(--lineColor);
+}
+.card-resume
+{
+    padding: 0.5rem 1rem;
+    position: relative;
+    animation: show 3s 1s;
+}
+
+.skills
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)) ;
+    gap: 1rem;
+    align-items: center;
+}
+.skills-bar
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: var(--greyColor);
+    position: relative;
+}
+.skills-fill
+{
+    height: 20px;
+    background: var(--lineColor);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.adobe
+{
+    width: 70%;
+}
+.journey
+{
+    width: 68%;
+}
+.programming
+{
+    width: 80%;
+}
+.researching
+{
+    width: 75%;
+}
+.wireframing
+{
+    width: 50%;
+}
+.awards
+{
+    display: flex;
+    justify-content: space-between;
+}
+.hobbies
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.hobbies img
+{
+    width: 50px;
+    height: 50px;
+    margin: 5px 0;
+    padding: 5px;
+    object-fit: contain;
+    border: 1px solid var(--greyColor);
+    border-radius: 10px;
+}
+
+@keyframes show
+{
+    from
+    {
+        opacity: 0;
+        top: -10px;
+    }
+    to{
+        opacity: 1;
+        top: 0;
+    }
+}
+
+@media screen and (max-width:630px)
+{
+    .left-resume
+    {
+        border-radius: none;
+        text-align: left;
+    }
+}
+.national
+{
+    font-size:9pt;
+}
+

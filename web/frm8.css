@@ -1,0 +1,187 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 17-Nov-2023, 6:45:06 pm
+    Author     : HUDA
+*/
+*
+{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+#c1
+{
+    background: rgba(0, 0, 0, 0.89);
+    height:100vh;
+    
+}
+ul{
+    list-style: none;
+}
+.navmenu
+{
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+}
+.navmenu ul{
+    padding-left:40px;
+    position:relative;
+}
+.navmenu ul::after{
+    content: "";
+    position:absolute;
+    width:3px;
+   animation-name: example;
+   animation-duration: 3s;
+   animation-fill-mode: both;
+    left:30px;
+    top:0px;
+    background:yellow;
+    z-index:-1;
+    margin-top: 25px;
+}
+@keyframes example{
+    from{height:calc(86% - 58px)}
+    to{height:calc(90% - 58px)}
+}
+.navmenu ul li{
+    padding:20px 0px;
+    padding-left: 10px;
+}
+
+.navmenu ul li a{
+    text-decoration: none;
+    position:relative;
+   color:white;
+    font-size: 1.5rem;
+    line-height: 1rem;
+    font-weight:500;
+}
+.navmenu ul li a:before{
+content:"";
+position:absolute;
+background: gray;
+width:18px;
+height:18px;
+left:-28px;
+top:50%;
+transform:translateY(-50%);
+border-radius: 50px;
+border:4px solid gray;
+
+}
+.navmenu ul li a.active {
+    font-weight: 700;
+   
+    
+}
+.navmenu ul li a.active::before {
+    background-color: yellow;
+    border:4px solid yellow;
+
+
+}
+
+.c2{
+    margin-top:90px;
+}
+#c3
+{
+    margin-left: 14px;
+}
+.from-field{
+    position:relative;
+    margin:32px 0px;
+}
+.input-text
+{
+    display: block;
+    width:70%;
+    height:36px;
+    
+    border-color:#5543ca;
+    font-size:18px;
+    line-height:26px;
+    font-family: 400px;
+
+}
+
+.Back{
+    width:20%;
+    height:50px;
+}
+#b1{
+    background-color: yellow;
+    color:black;
+    font-weight: bolder;
+    font-size: larger;
+}
+#b2{
+    background-color: white;
+    color:black;
+    font-weight: bolder;
+    font-size: larger;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+  }
+  
+  a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .Back {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  
+  .Submit {
+    background-color: yellow;
+    color: black;
+    width:20%;
+    height:50px;
+  }
+  .Ask {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  .navmenu ul::before{
+    content: "";
+    position:absolute;
+    width:3px;
+    height:calc(100% - 58px);
+    left:30px;
+    top:0px;
+    background:gray;
+    z-index:-1;
+    margin-top: 25px;
+  }
+  #b3
+  {
+    color:white;
+    font-weight: bold;
+    background-color: blue;
+  }
+  #b4
+  {
+    color:white;
+    font-weight: bold;
+    background-color: red;
+  }
+   #tbl-student
+  {
+    position:relative;
+    top:650px;
+    
+
+  }
+
+
+

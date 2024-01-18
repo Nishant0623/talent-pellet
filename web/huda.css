@@ -1,0 +1,143 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 01-Oct-2023, 12:07:46 am
+    Author     : HUDA
+*/
+
+*
+{
+    margin:0;
+    padding:0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#header
+{
+  position:absolute;
+  z-index:10;
+  width:100%;
+}
+
+.navbar-brand
+{
+  font-weight:bold;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color:#ccc;
+
+}
+.nav-item
+{
+  font-weight:600;
+  padding-left: 50px;
+  text-transform: uppercase;
+}
+.nav-link
+{
+  color:#ccc;
+  letter-spacing: 2px;
+  font-size: 1em;
+  font-weight: 700;
+}
+.nav-link:hover
+{
+  background: #dcdcdc;
+  color: #262626;
+  border-radius: 5px;
+  transition:all 0.6s ease 0s;
+}
+.film
+{
+    background-color: rgba(16, 30, 47, 0.65);
+    opacity:80%;
+    height:500px;
+    width:100%;
+    position:absolute;
+top:0px;
+}
+.main
+{
+  margin:0px;
+  padding:0px;
+  
+}
+#d1
+{
+  text-align: center;
+  
+  
+}
+#about
+{
+  position:absolute;
+  top:100px;
+  color:white;
+font-weight: bolder;
+}
+#about h1
+{
+text-align: left;
+
+}
+#about p{
+  text-align: left;
+}
+#i1
+{
+  
+ position: relative;
+ top:10%;
+  
+}
+.main{
+  margin-top: 3em;
+}
+.main h1{
+  font-weight: bolder;
+}
+.main h3{
+  font-weight: bold;
+  margin-top:1.2em;
+}
+.main p{
+  font-size: medium;
+  margin-top:1em;
+}
+#b1
+{
+  margin-top:0.5em;
+}
+.services
+{
+  margin-top:5em;
+}
+#r1
+{
+  text-align: center;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+#r2
+{
+  margin-top:2em;
+}
+.foot
+{
+  margin-top:2em;
+  height:100px;
+  background-color: whitesmoke;
+  width:100%;
+  text-align: center;
+}
+.but
+{
+  width:20%; 
+  height:70px;
+  position:relative;
+  top:15px;
+}
+.foot h3{
+  font-weight: bolder;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" type="text/css" href="preloader.css"><!-- comment -->
+        <link rel="stylesheet" type="text/css" href="bootstrap.css">
+         <script>
+      function visible()
+      {
+        document.getElementById("d1").style.visibility='hidden';
+        document.getElementById("d2").style.visibility='visible';
+        setTimeout(reDirect,1000);
+      }
+      setTimeout(visible,4000);
+          function reDirect()
+      {
+          const searchParams = new URLSearchParams(window.location.search);
+
+        window.location.href = "webPage1.html?r="+searchParams;
+
+      }
+      
+      </script>
+    </head>
+    <body>
+     <div id="d1">
+      
+        <div class="spinner-grow text-warning" style="width: 3rem; height: 3rem;" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-warning" style="width: 3rem; height: 3em;" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-warning" style="width: 3rem; height: 3rem;" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-warning" style="width: 3rem; height: 3rem;" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-warning" style="width: 3rem; height: 3rem;" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-warning" style="width: 3rem; height: 3rem;" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        
+        <div class="spinner-grow text-warning" style="width: 3rem; height: 3rem;" role="status" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+   <h2>Applying Template</h2>
+   
+      </div>
+      <div id="d2">
+        <img src="pictures/correct.png" id="i1">
+        <h1>Template Applied Successfully</h1>
+       </div>
+      
+    </body>
+</html>

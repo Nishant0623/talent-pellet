@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="email.css"><!-- comment --> 
+        <script>
+             function valiDateEmail()
+            {
+                
+                 let reg=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        let x=document.getElementById("email").value;
+        let y=document.getElementById("p4");
+        if(x==="")
+        {
+          
+         
+          y.innerHTML="It is a required field";
+        }
+        else{
+          if(!reg.test(x))
+          {
+       
+          y.innerHTML="Enter valid email format";
+          }
+          else{
+
+          y.innerHTML="";
+          }
+      }
+      
+            }
+            function onClick()
+            {
+                valiDateEmail();
+            }
+            </script>
+    </head>
+    <body>
+        <div class="bg">
+<div class="form">
+    <h1 id="h">Enter Email</h1>
+    <form action="http://localhost:8088/WebApplication2/email" method="post">
+        <div class="input-group">
+            
+           
+               <div class="input-field mb-3">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="text" placeholder="Email" id="email" name="email">
+                <div id="p4" style="font-size: 10px"></div>
+            </div>
+                    <div class="btn-field">
+            <button type="submit"  id="signIn" onclick="onClick()">Submit</button>
+           
+
+        </div>
+            
+
+           
+           
+          
+             
+      
+      
+        </div>
+    </form>
+
+</div>
+    </div>
+        
+    </body>
+</html>
